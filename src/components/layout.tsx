@@ -16,18 +16,29 @@ export default function Layout() {
             <div className="container">
                 <nav className="hidden justify-between p-4 w-full sm:flex">
                     <div>
-                        <h1>SensorStack</h1>
+                        <h1 className="font-extrabold text-xl py-1">
+                            Sensor
+                            <span className="text-emerald-600 dark:text-emerald-400">
+                                Stack
+                            </span>
+                        </h1>
                     </div>
                     <div className="flex gap-4">
                         <Link
                             to={"/"}
-                            className={buttonVariants({ variant: "ghost" })}
+                            className={buttonVariants({
+                                variant: "ghost",
+                                size: "xl",
+                            })}
                         >
                             Home
                         </Link>
                         <Link
                             to={"/"}
-                            className={buttonVariants({ variant: "ghost" })}
+                            className={buttonVariants({
+                                variant: "ghost",
+                                size: "xl",
+                            })}
                         >
                             About
                         </Link>
