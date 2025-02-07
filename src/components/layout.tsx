@@ -12,71 +12,78 @@ import {
 export default function Layout() {
     const [open, setOpen] = useState(false);
     return (
-        <div className="w-screen h-screen bg-zinc-50 dark:bg-zinc-900 text-zinc-950 dark:text-zinc-50 flex flex-col items-center">
-            <div className="container">
-                <nav className="hidden justify-between p-4 w-full sm:flex">
-                    <div>
-                        <h1 className="font-extrabold text-xl py-1">
-                            Sensor
-                            <span className="text-emerald-600 dark:text-emerald-400">
-                                Stack
-                            </span>
-                        </h1>
-                    </div>
-                    <div className="flex gap-4">
-                        <Link
-                            to={"/"}
-                            className={buttonVariants({
-                                variant: "ghost",
-                                size: "xl",
-                            })}
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            to={"/"}
-                            className={buttonVariants({
-                                variant: "ghost",
-                                size: "xl",
-                            })}
-                        >
-                            About
-                        </Link>
+        <div className="w-screen h-screen ">
+            <div className="flex flex-col items-center ">
+                <div className="container">
+                    <nav className="hidden justify-between p-5 w-full sm:flex">
+                        <div>
+                            <h1 className="font-extrabold text-xl py-1">
+                                Sensor
+                                <span className="text-emerald-600 dark:text-emerald-400">
+                                    Stack
+                                </span>
+                            </h1>
+                        </div>
+                        <div className="flex gap-4">
+                            <Link
+                                to={"/"}
+                                className={buttonVariants({
+                                    variant: "ghost",
+                                    size: "xl",
+                                    className: "text-[17px]",
+                                })}
+                            >
+                                Home
+                            </Link>
+                            <Link
+                                to={"/"}
+                                className={buttonVariants({
+                                    variant: "ghost",
+                                    size: "xl",
+                                    className: "text-[17px]",
+                                })}
+                            >
+                                About
+                            </Link>
 
+                            <ThemeSelect />
+                        </div>
+                    </nav>
+                    <nav className="sm:hidden flex justify-between w-full p-4">
+                        <Collapsible open={open} onOpenChange={setOpen}>
+                            <CollapsibleTrigger
+                                className={buttonVariants({
+                                    variant: "ghost",
+                                    size: "icon-lg",
+                                })}
+                            >
+                                {open ? <X /> : <Menu />}
+                            </CollapsibleTrigger>
+                            <CollapsibleContent>
+                                <div className="flex flex-col gap-4">
+                                    <Link
+                                        to={"/"}
+                                        className={buttonVariants({
+                                            variant: "link",
+                                        })}
+                                    >
+                                        Home
+                                    </Link>
+                                    <Link
+                                        to={"/"}
+                                        className={buttonVariants({
+                                            variant: "link",
+                                        })}
+                                    >
+                                        About
+                                    </Link>
+                                </div>
+                            </CollapsibleContent>
+                        </Collapsible>
                         <ThemeSelect />
-                    </div>
-                </nav>
-                <nav className="sm:hidden flex justify-between w-full p-4">
-                    <Collapsible open={open} onOpenChange={setOpen}>
-                        <CollapsibleTrigger
-                            className={buttonVariants({ variant: "ghost" })}
-                        >
-                            {open ? <X size={32} /> : <Menu size={32} />}
-                        </CollapsibleTrigger>
-                        <CollapsibleContent>
-                            <div className="flex flex-col gap-4">
-                                <Link
-                                    to={"/"}
-                                    className={buttonVariants({
-                                        variant: "link",
-                                    })}
-                                >
-                                    Home
-                                </Link>
-                                <Link
-                                    to={"/"}
-                                    className={buttonVariants({
-                                        variant: "link",
-                                    })}
-                                >
-                                    About
-                                </Link>
-                            </div>
-                        </CollapsibleContent>
-                    </Collapsible>
-                    <ThemeSelect />
-                </nav>
-                <Outlet />
+                    </nav>
+                    <Outlet />
+                </div>
             </div>
         </div>
     );
