@@ -4,16 +4,11 @@ import HeroIllustration from "@/assets/hero.svg";
 
 export default function Hero() {
     return (
-        <section className="pt-12 pb-12 sm:pb-16 lg:pt-8">
+        <section className="pt-12 pb-12 sm:pb-24 lg:pt-16">
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-16">
                     <div>
-                        <div className="text-center lg:text-left">
-                            <h1 className="text-muted-foreground">
-                                Transform sensor data into predictive insights -
-                                access industry-specific datasets to supercharge
-                                your ML models
-                            </h1>
+                        <div className="text-center lg:text-left space-y-4">
                             <h1 className="text-4xl font-bold leading-tight text-foreground sm:text-4xl sm:leading-tight lg:leading-tight lg:text-5xl font-pj">
                                 <span className="text-emerald-500 dark:text-emerald-400">
                                     IoT Intelligence

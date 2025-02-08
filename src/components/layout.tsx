@@ -37,7 +37,7 @@ export default function Layout() {
                                 Home
                             </Link>
                             <Link
-                                to={"/"}
+                                to={"/about"}
                                 className={buttonVariants({
                                     variant: "ghost",
                                     size: "xl",
@@ -71,7 +71,7 @@ export default function Layout() {
                                         Home
                                     </Link>
                                     <Link
-                                        to={"/"}
+                                        to={"/about"}
                                         className={buttonVariants({
                                             variant: "link",
                                         })}

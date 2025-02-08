@@ -36,6 +36,18 @@ export default function Footer() {
                         </p>
                     </div>
                 </div>
+                <div className="flex justify-end mt-8">
+                    <h1 className="font-extrabold text-xs">
+                        designed by{" "}
+                        <a
+                            href="https://www.okankoca.dev"
+                            target="_blank"
+                            className="text-emerald-500 dark:text-emerald-400"
+                        >
+                            okankoca
+                        </a>
+                    </h1>
+                </div>
             </div>
         </section>
     );
