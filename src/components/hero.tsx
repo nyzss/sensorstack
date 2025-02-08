@@ -29,9 +29,7 @@ export default function Hero() {
                                 <div className="relative p-2 sm:border sm:border-gray-400 group sm:rounded-xl sm:focus-within:ring-1 sm:focus-within:ring-gray-900 sm:focus-within:border-gray-900">
                                     <input
                                         type="email"
-                                        name=""
-                                        id=""
-                                        placeholder="Enter email address"
+                                        placeholder="Enter your email address"
                                         className="block w-full px-3 py-2 text-foreground placeholder-foreground bg-transparent border border-accent-foreground outline-none focus:border-background focus:ring-1 focus:ring-background rounded-xl sm:border-none sm:focus:ring-0 sm:focus:border-transparent"
                                     />
                                     <div className="mt-4 sm:mt-0 sm:absolute sm:inset-y-0 sm:right-0 sm:flex sm:items-center sm:pr-2">

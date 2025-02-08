@@ -36,7 +36,7 @@ export default function Layout() {
                             >
                                 Home
                             </Link>
-                            <Link
+                            {/* <Link
                                 to={"/about"}
                                 className={buttonVariants({
                                     variant: "ghost",
@@ -45,7 +45,7 @@ export default function Layout() {
                                 })}
                             >
                                 About
-                            </Link>
+                            </Link> */}
 
                             <ThemeSelect />
                         </div>
@@ -70,14 +70,14 @@ export default function Layout() {
                                     >
                                         Home
                                     </Link>
-                                    <Link
+                                    {/* <Link
                                         to={"/about"}
                                         className={buttonVariants({
                                             variant: "link",
                                         })}
                                     >
                                         About
-                                    </Link>
+                                    </Link> */}
                                 </div>
                             </CollapsibleContent>
                         </Collapsible>
