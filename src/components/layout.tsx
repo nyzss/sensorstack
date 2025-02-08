@@ -15,7 +15,7 @@ export default function Layout() {
     return (
         <div className="w-screen h-screen">
             <div className="flex flex-col items-center">
-                <div className="container lg:max-w-[60rem]">
+                <div className="container">
                     <nav className="hidden justify-between p-5 w-full sm:flex">
                         <div>
                             <h1 className="font-extrabold text-xl py-1 select-none">
@@ -81,6 +81,12 @@ export default function Layout() {
                                 </div>
                             </CollapsibleContent>
                         </Collapsible>
+                        <h1 className="font-extrabold text-xl py-1 select-none">
+                            Sensor
+                            <span className="text-emerald-600 dark:text-emerald-400">
+                                Stack
+                            </span>
+                        </h1>
                         <ThemeSelect />
                     </nav>
                     <Outlet />
