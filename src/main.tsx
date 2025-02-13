@@ -6,6 +6,7 @@ import Home from "./pages/home.tsx";
 import Layout from "./components/layout.tsx";
 import { ThemeProvider } from "next-themes";
 import About from "./pages/about.tsx";
+import { Toaster } from "./components/ui/sonner.tsx";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
@@ -18,6 +19,7 @@ createRoot(document.getElementById("root")!).render(
                     </Route>
                 </Routes>
             </BrowserRouter>
+            <Toaster />
         </ThemeProvider>
     </StrictMode>
 );
