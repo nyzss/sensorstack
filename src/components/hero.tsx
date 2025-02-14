@@ -62,7 +62,7 @@ export default function Hero() {
                                     onSubmit={form.handleSubmit(handleSubmit)}
                                     className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-2 sm:mr-12 justify-center items-start"
                                 >
-                                    <div className="flex-1">
+                                    <div className="flex-1 w-full">
                                         <FormField
                                             control={form.control}
                                             name="email"
@@ -86,7 +86,7 @@ export default function Hero() {
                                     <Button
                                         type="submit"
                                         size={"lg"}
-                                        className="sm:py-7 sm:px-4 text-lg"
+                                        className="sm:py-7 sm:px-4 text-lg self-center"
                                     >
                                         Subscribe
                                     </Button>
